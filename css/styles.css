@@ -1,13 +1,14 @@
 body{
     font-size: 16px;
-    background-color: #eee;
+    background-color: #fff;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 nav ul{
-    background-color: #008263b3;
+    background-color: #fff;
+    border-bottom: 5px solid #008263;
     color: white;
     font-size: 18px;
     list-style-type: none;
@@ -19,7 +20,7 @@ nav ul{
 }
 
 nav li a{
-  color: white;
+  color: #008263;
   float:left;
   display: block;
   text-decoration: none;
@@ -36,7 +37,9 @@ nav li a:hover{
 }
 
 .current {
+  color: white;
   background-color: #008263;
+  text-decoration: underline;
   font-weight: bold;
 
 }
@@ -74,11 +77,11 @@ img.profile{
 .featured{
   min-height: 100px;
   max-height: 200px;
-  /*background-image: url("../images/home-header.jpg");
+  background-image: url("../images/home-header-teal.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;*/
-  background-color: #008263b3;
+  background-position: center;
+  background-color: #008263;
   text-align: center;
   margin: auto;
   padding: 30px;
