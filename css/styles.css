@@ -88,9 +88,8 @@ button {
   cursor: pointer;
 }
 
-button a {
-  color: white;
-  text-decoration: none;
+.icon-color{
+  color: #008263;
 }
 
 .button-style {
