@@ -88,6 +88,11 @@ button {
   cursor: pointer;
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
+
 .button-style {
   background-color: #008263;
   border: none;
