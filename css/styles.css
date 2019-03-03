@@ -1,6 +1,6 @@
 body{
     font-family: 'Libre Baskerville', serif;
-    font-size: 25px;
+    font-size: 16px;
     background-color: #fff;
     height: 100%;
     margin: 0;
@@ -9,37 +9,6 @@ body{
 
 header {
   font-family: 'Raleway', sans-serif;
-  height: 8vh;
-  background-color: #008263;
-}
-
-nav{
-  height: 8vh;
-  font-size: 1.2em;
-}
-
-nav > ul{
-  height: 8vh;
-  padding-right:20px;
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-li a {
-  color: white;
-  padding: 20px 5vw;
-  text-decoration: none;
-}
-
-.current {
-  line-height: 1;
-  color: #008263;
-  background-color: white;
-  font-weight: bold;
-  border-radius:10px;
-
 }
 
 main{
@@ -59,27 +28,6 @@ main a{
 
 }
 
-h1{
-  font-family: 'Raleway', sans-serif;
-  font-weight:  600;
-  font-size: 40px;
-  line-height: 2em;
-}
-
-h2{
-  color: #008263;
-  font-family: 'Raleway', sans-serif;
-  font-size: 35px;
-  line-height: 1.2em;
-  padding-bottom: 10px;
-}
-
-p {
-    font-size: 25px;
-    line-height: 1.3em;
-    margin-block-end: 1em;
-}
-
 button {
   background-color: #008263;
   border: none;
@@ -95,89 +43,6 @@ button {
 
 .icon-color{
   color: #008263;
-}
-
-.button-style {
-  background-color: #008263;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-.portfolio {
-  font-size: 1em;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-
-}
-
-.portfolio-item{
-  width: 45%;
-  justify-content:center;
-  align-items: flex-start;
-  align-content: space-around;
-}
-
-.portfolio-item > img{
-  width: 90%;
-  justify-content: center;
-}
-
-.portfolio-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 20px 0;
-}
-
-img.profile{
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-
-}
-
-.featured{
-  display: flex;
-  flex-direction: column;
-  min-height: 10vh;
-  max-height: 30vh;
-  background-image: url("../images/home-header-teal.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #008263;
-  text-align: center;
-  margin: auto;
-  padding: 30px;
-}
-
-.featured p{
-  font-family: 'Raleway', sans-serif;
-  font-weight:  600;
-  min-height: 10vh;
-  max-height: 10vh;
-  margin: 0 auto;
-  color: white;
-  font-size: 40px;
-}
-
-.featured img{
-  margin: auto;
-  padding-top: 5vh;
-  height: 10vh;
-  width: auto;
 }
 
 .skipmain a{
@@ -200,11 +65,556 @@ img.profile{
 }
 
 footer{
+  line-height: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   color: white;
   background-color: #222;
+}
+
+footer p{
+  padding: 0;
+  margin: 0;
+}
+
+/* When printing hide images and top navigation bar and format text for easy reading */
+@media print {
+  img{
+    display:none!important;
+  }
+  header{
+    display:none!important;
+  }
+
+  p{
+    padding-bottom: 20px;
+  }
+
+}
+
+/* small devices e.g. phones */
+@media  screen and (max-width: 768px) {
+
+  body{
+    background-color: pink;
+  }
+
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    font-size: 30px;
+    line-height: 1em;
+    padding-bottom: 20px;
+  }
+
+  h2{
+    color: #008263;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: left!important;
+  }
+
+  p {
+      font-size: 16px;
+      line-height: 1.3em;
+      margin-block-end: 1em;
+  }
+
+  /* Home hero image with text */
+  .featured{
+    min-height: 35vh;
+    background-image: url("../images/home-header-teal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #008263;
+    text-align: center;
+    margin: auto;
+  }
+
+  .featured p{
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    min-height: 10vh;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+  }
+
+  .featured img{
+    margin: 0 auto;
+    padding-top: 5vh;
+    min-height: 15vh;
+    max-height: 15vh;
+    width: auto;
+  }
+
+  .contenthome{
+    display: block;
+    margin: 30px 50px;
+  }
+
+  img.profile{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+/* portfolio page flex layout */
+  .portfolio {
+    font-size: 1em;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .portfolio-item{
+    width: 100%;
+    justify-content:center;
+    align-items: flex-start;
+    align-content: space-around;
+    text-align: justify;
+  }
+
+  .portfolio-item > img{
+    width: 100%;
+    max-height: 40vh;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+  }
+
+/* Portfolio item page layout*/
+  .portfolio-img{
+    width: 100%;
+    max-height: 40vh;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  .content ul{
+    list-style-type: square;
+  }
+
+  .content li {
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 1.2;
+  }
+
+/* Contact form styles */
+  input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+
+  textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+
+  .button-style {
+    width: 100%;
+    background-color: #008263;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+/* navigation formatting */
+nav{
+  }
+
+  .current {
+    color: #008263!important;
+    background-color: white!important;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+
+  .current > a{
+    color: #008263!important;
+    background-color: white!important;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  nav > ul{
+    background-color: #008263;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  li a {
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 3em;
+    text-decoration: none;
+  }
+
+}
+
+/* medium sized devices e.g. tablets */
+@media screen and (min-width: 768px) {
+  body{
+    background-color: lightblue;
+  }
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    font-size: 40px;
+    line-height: 1em;
+    padding-bottom: 20px;
+  }
+
+  h2{
+    color: #008263;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: left!important;
+  }
+
+  p {
+      font-size: 16px;
+      line-height: 1.3em;
+      margin-block-end: 1em;
+  }
+
+  /* Home hero image with text */
+  .featured{
+    min-height: 40vh;
+    background-image: url("../images/home-header-teal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #008263;
+    text-align: center;
+    margin: auto;
+  }
+
+  .featured p{
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    min-height: 10vh;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+  }
+
+  .featured img{
+    margin: 0 auto;
+    padding-top: 5vh;
+    height: 20vh;
+    width: auto;
+  }
+
+  .contenthome{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 50px;
+  }
+
+  img.profile{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: top;
+    padding: 0 30px 0 0;
+  }
+
+/* portfolio page flex layout */
+  .portfolio {
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .portfolio-item{
+    width: 48%;
+    justify-content:center;
+    align-items: flex-start;
+    align-content: space-around;
+    text-align: justify;
+  }
+
+  .portfolio-item > img{
+    width: 100%;
+    max-height: 40vh;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Portfolio item page layout*/
+    .portfolio-img{
+      width: 100%;
+      max-height: 50vh;
+      justify-content: center;
+      object-fit: cover;
+      object-position: center;
+
+    }
+
+    .content ul{
+      list-style-type: square;
+    }
+
+    .content li {
+      font-size: 16px;
+      padding-bottom: 10px;
+      line-height: 1.2;
+    }
+
+/* Contact form styles */
+  input{
+    width: 50%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+
+  textarea{
+    width: 50%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+
+  .button-style {
+    width: 52%;
+    background-color: #008263;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  /* navigation formatting */
+  nav{
+    }
+
+    .current {
+      color: #008263!important;
+      background-color: white!important;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .current > a{
+      color: #008263!important;
+      background-color: white!important;
+      font-weight: bold;
+      text-align: center;
+
+    }
+
+    nav > ul{
+      width: 100%;
+      background-color: #008263;
+      color: white;
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    li a {
+      padding: 0 40px;
+      color: white;
+      line-height: 3.5em;
+      text-decoration: none;
+      text-align: center;
+    }
+
+}
+
+/* large devices e.g. laptop and desktop screen */
+@media screen and (min-width: 1200px) {
+  body{
+    background-color: lightgreen;
+  }
+
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    font-size: 50px;
+    line-height: 1em;
+    padding-bottom: 20px;
+  }
+
+  h2{
+    color: #008263;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: left!important;
+  }
+
+  p {
+      font-size: 16px;
+      line-height: 1.3em;
+      margin-block-end: 1em;
+  }
+/* Home hero image with text */
+  .featured{
+    min-height: 45vh;
+    background-image: url("../images/home-header-teal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #008263;
+    text-align: center;
+    margin: auto;
+  }
+
+  .featured p{
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    min-height: 10vh;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+  }
+
+  .featured img{
+    margin: 0 auto;
+    padding-top: 5vh;
+    height: 20vh;
+    width: auto;
+  }
+
+  .contenthome{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 50px;
+  }
+
+  img.profile{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+    padding: 0 50px 0 0;
+  }
+
+  /* portfolio page flex layout */
+    .portfolio {
+      font-size: 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+    }
+
+    .portfolio-item{
+      width: 32%;
+      justify-content:center;
+      align-items: flex-start;
+      align-content: space-around;
+      text-align: justify;
+    }
+
+    .portfolio-item > img{
+      width: 100%;
+      max-height: 40vh;
+      justify-content: center;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* Portfolio item page layout*/
+      .portfolio-img{
+        width: 100%;
+        max-height: 40vh;
+        justify-content: center;
+        object-fit: cover;
+        object-position: center;
+
+      }
+
+  /* Contact form styles */
+    input{
+      width: 50%;
+      margin: 5px 0;
+      padding: 10px 10px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+    }
+
+    textarea{
+      width: 50%;
+      margin: 5px 0;
+      padding: 10px 10px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+    }
+
+    .button-style {
+      width: 52%;
+      background-color: #008263;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 15px;
+      font-size: 1em;
+      cursor: pointer;
+    }
 
 }
