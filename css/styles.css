@@ -136,7 +136,7 @@ footer p{
 
   /* Home hero image with text */
   .featured{
-    min-height: 35vh;
+    min-height: 25vh;
     background-image: url("../images/home-header-teal.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -158,9 +158,7 @@ footer p{
   .featured img{
     margin: 0 auto;
     padding-top: 5vh;
-    min-height: 15vh;
-    max-height: 15vh;
-    width: auto;
+    max-width: 90%;
   }
 
   .contenthome{
@@ -385,8 +383,7 @@ nav{
   .featured img{
     margin: 0 auto;
     padding-top: 5vh;
-    height: 20vh;
-    width: auto;
+    max-width: 70%;
   }
 
   .contenthome{
