@@ -187,8 +187,8 @@ footer p{
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
             justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -206,7 +206,7 @@ footer p{
             align-items: flex-start;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
-    text-align: justify;
+    text-align: left;
   }
 
   .portfolio-item > img{
