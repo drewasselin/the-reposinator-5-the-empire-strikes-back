@@ -123,6 +123,15 @@ footer p{
     text-align: left!important;
   }
 
+  h3{
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: left!important;
+  }
+
   p {
       font-size: 16px;
       line-height: 1.3em;
@@ -376,6 +385,15 @@ nav{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 24px;
+    line-height: 1.2em;
+    text-align: left!important;
+  }
+
+  h3{
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 1.2em;
     text-align: left!important;
   }
@@ -639,6 +657,15 @@ nav{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 24px;
+    line-height: 1.2em;
+    text-align: left!important;
+  }
+
+  h3{
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 1.2em;
     text-align: left!important;
   }
