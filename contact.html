@@ -19,6 +19,34 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-138436072-1');
+
+    function validate(){
+      var name = document.querySelector('#name').value
+      var email = document.querySelector('#email').value
+      var message = document.querySelector('#message').value
+      if (name == "" || email == "" || message == ""){
+        if (name == ""){
+          document.querySelector('#nError').style.visibility = "visible"
+        } else {
+          document.querySelector('#nError').style.visibility = ""
+        }
+        if (email == ""){
+          document.querySelector('#eError').style.visibility = "visible"
+        } else {
+          document.querySelector('#eError').style.visibility = ""
+        }
+        if (message == ""){
+          document.querySelector('#mError').style.visibility = "visible"
+        } else {
+          document.querySelector('#mError').style.visibility = ""
+        }
+        return false;
+      } else{
+        return true;
+      }
+
+    }
+
   </script>
 
   <title>Drew Asselin - Contact</title>
@@ -41,18 +69,20 @@
       <h1>Contact</h1>
       <p>Would you like to work together? Use the form below to get in touch!</p>
 
-      <form class="contactform">
+      <form class="contactform" name="contactform" onsubmit="return validate();">
+      <fieldset>
         <label for="name">Name</label>
           <br>
         <input placeholder="Name" type="text" name="name" id="name">
-          <br><br>
+        <p class="errorMsg" id="nError">Please enter your name!</p>
         <label for="email">Email Address</label>
           <br>
         <input placeholder="name@mail.com" type="email" name="email" id="email">
-          <br><br>
+        <p class="errorMsg" id="eError">Please enter your email address!</p>
         <label for="message">Message</label><br>
           <textarea placeholder="Write your message here..." name="message" id="message" rows="30" cols="50"></textarea>
-          <br><br>
+          <p class="errorMsg" id="mError">Please enter a message!</p>
+        </fieldset>
         <input class="button-style" type="submit" value="Send Message">
       </form>
     </div>

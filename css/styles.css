@@ -66,6 +66,13 @@ button {
   top: 0px;
 }
 
+.errorMsg{
+  visibility:hidden;
+  color:red;
+  font-weight: bold;
+}
+
+
 footer{
   bottom: 0!important;
   line-height: 1em;
