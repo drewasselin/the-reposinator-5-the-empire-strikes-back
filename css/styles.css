@@ -104,7 +104,7 @@ footer p{
 }
 
 /* small devices e.g. phones */
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 767px) {
 
   h1{
     font-family: 'Raleway', sans-serif;
@@ -245,6 +245,40 @@ footer p{
     line-height: 1.2;
   }
 
+  #port-docs{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .docs-group{
+    min-width: 100%;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    text-align: justify;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .docs-item{
+    width:90%;
+
+  }
+
+
 /* Contact form styles */
   input{
     width: 100%;
@@ -327,7 +361,7 @@ nav{
 }
 
 /* medium sized devices e.g. tablets */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
   h1{
     font-family: 'Raleway', sans-serif;
@@ -474,6 +508,40 @@ nav{
       font-size: 16px;
       padding-bottom: 10px;
       line-height: 1.2;
+    }
+
+
+    #port-docs{
+      width:100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+
+    .docs-group{
+      max-width: 48%;
+      -webkit-box-pack:center;
+          -ms-flex-pack:center;
+              justify-content:center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-line-pack: distribute;
+          align-content: space-between;
+      text-align: justify;
+      -ms-flex-wrap:wrap;
+          flex-wrap:wrap;
+    }
+
+    .docs-item{
+      width:90%;
+
     }
 
 /* Contact form styles */
@@ -690,6 +758,39 @@ nav{
            object-fit: cover;
         -o-object-position: center;
            object-position: center;
+
+      }
+
+      #port-docs{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+      }
+
+      .docs-group{
+        width: 32%;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-line-pack: distribute;
+            align-content: space-between;
+        text-align: justify;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+      }
+
+      .docs-item{
+        width:90%;
 
       }
 
