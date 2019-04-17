@@ -88,6 +88,9 @@ footer p{
   margin: 0;
 }
 
+
+
+
 /* When printing hide images and top navigation bar and format text for easy reading */
 @media print {
   img{
@@ -143,6 +146,7 @@ footer p{
   .featured{
     min-height: 25vh;
     background-image: url("../images/home-header-teal.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -410,6 +414,7 @@ nav{
     min-height: 40vh;
     background-image: url("../images/home-header-teal.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #008263;
@@ -681,6 +686,7 @@ nav{
     min-height: 45vh;
     background-image: url("../images/home-header-teal.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #008263;
