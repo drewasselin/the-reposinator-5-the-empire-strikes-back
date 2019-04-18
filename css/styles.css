@@ -72,6 +72,10 @@ button {
   font-weight: bold;
 }
 
+.sticky{
+  position:fixed;
+  top:0;
+}
 
 footer{
   bottom: 0!important;
@@ -90,6 +94,11 @@ footer{
   background-color: #222;
 }
 
+#printQR{
+  padding-bottom:20px;
+  display: none;
+}
+
 footer p{
   padding: 0;
   margin: 0;
@@ -101,8 +110,13 @@ footer p{
 /* When printing hide images and top navigation bar and format text for easy reading */
 @media print {
   img{
-    display:none!important;
+    display:none;
   }
+
+  #printQR{
+    display: block!important;
+  }
+
   header{
     display:none!important;
   }
