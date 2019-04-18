@@ -10,29 +10,25 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="css/lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138436072-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-138436072-1');
-  </script>
-  
   <title>Drew Asselin - UConnAlumni.com</title>
 </head>
 
 <body>
   <div class="skipmain"><a href="#main">Skip to Content</a></div>
   <header>
-      <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li class="current"> <a href="portfolio.html">Portfolio</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="navMenu">
+        <div class="navItem"><img src="images/logo-wht.png" class="navLogo" alt="drew asselin logo" /></div>
+        <div class="navItem navIcon" tabindex="0"><i class="fa fa-bars fa-2x" aria-label="expand or close menu"></i></div>
+            <nav class="navMenuItems">
+              <div class="navItem"><a href="index.html">Home</a></div>
+              <div class="navItem"><a href="portfolio.html">Portfolio</a></div>
+              <div class="navItem"><a href="contact.html">Contact</a></div>
+            </nav>
+    <div>
   </header>
 
   <main id="main">
@@ -65,5 +61,19 @@
     <p>&copy; Drew Asselin 2019</p>
   </footer>
   <script src="js/lightbox.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138436072-1');
+
+    $(document).ready(function(){
+      $(".navIcon").click(function(){
+        $(".navMenuItems").toggleClass("navMenuItems_toggleshow");
+      });
+    });
+
+  </script>
 </body>
 </html>
