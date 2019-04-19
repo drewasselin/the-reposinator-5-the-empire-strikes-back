@@ -23,7 +23,7 @@ main{
 
 main a{
   font-size: 1.2em;
-  color: #008263;
+  color: #005843;
   font-weight: bold;
   line-height: 2em;
 
@@ -43,7 +43,7 @@ button {
 }
 
 .icon-color{
-  color: #008263;
+  color: #005843;
 }
 
 .skipmain a{
@@ -72,9 +72,11 @@ button {
   font-weight: bold;
 }
 
-.sticky{
-  position:fixed;
-  top:0;
+.confirmText{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  color: #008263;
+  font-weight:bold;
 }
 
 footer{
